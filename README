@@ -25,6 +25,11 @@ To install to another destination:
 
     DESTDIR=$HOME/local make clean install
 
+For Ubuntu, to install as x-terminal-emulator:
+
+    sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/st 10
+    sudo update-alternatives --config x-terminal-emulator
+
 Running st
 ----------
 If you did not install st with make clean install, you must compile
